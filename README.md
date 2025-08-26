@@ -1,7 +1,7 @@
 
 # Rewards Program - Vanilla JavaScript
 
-This project implements the rewards program described in the specification.
+This project implements the rewards program 
 
 ## Run (static server)
 1. Install dev dependencies (optional for tests):
