@@ -1,0 +1,30 @@
+
+:root{
+  --bg1:#f6d365; --bg2:#fda085; --accent:#6a5acd; --muted:#666;
+  --card:#ffffffcc;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;
+  background:linear-gradient(135deg,var(--bg1),var(--bg2));
+  min-height:100vh;color:#222;padding:18px;}
+.app{max-width:1100px;margin:0 auto;}
+.header{display:flex;flex-direction:column;gap:12px;margin-bottom:18px;}
+.header h1{color:var(--accent);margin:0;font-size:28px;text-align:center;}
+.filters{display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap;}
+.filters label{font-weight:600;color:#333;}
+select{padding:8px 10px;border-radius:10px;border:1px solid rgba(0,0,0,0.08);background:#fff;}
+.main{display:grid;grid-template-columns:300px 1fr;gap:16px;align-items:start;}
+.sidebar{background:var(--card);padding:12px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.08);}
+.content{display:flex;flex-direction:column;gap:12px;}
+.card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.06);}
+.customer-card{display:flex;justify-content:space-between;align-items:center;padding:10px;border-radius:10px;border:1px solid #eee;margin-bottom:8px;cursor:pointer;background:#fff;}
+.customer-card.active{border-color:var(--accent);background:linear-gradient(90deg,#f3f2ff,#fff);box-shadow:0 6px 14px rgba(106,90,205,0.08);}
+.tag{font-size:12px;padding:6px 10px;border-radius:999px;background:#eef1ff;color:var(--accent);}
+#summary h2{margin:0 0 8px 0;color:var(--accent);}
+#monthlyBreakdown table,#transactionsTable table{width:100%;border-collapse:collapse;}
+#monthlyBreakdown th,#transactionsTable th{background:linear-gradient(90deg,var(--accent),#ff6f61);color:#fff;padding:10px;text-align:left;}
+#monthlyBreakdown td,#transactionsTable td{padding:10px;border-bottom:1px solid #eee;}
+.transactions-note{font-size:13px;color:var(--muted);text-align:right;margin-top:8px;}
+.pagination{display:flex;gap:8px;justify-content:center;margin-top:10px;}
+.pagination button{padding:6px 10px;border-radius:8px;border:none;background:var(--accent);color:#fff;cursor:pointer;}
+.pagination button[disabled]{opacity:0.5;cursor:not-allowed;background:#ccc;color:#333;}

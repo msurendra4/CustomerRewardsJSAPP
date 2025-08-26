@@ -1,0 +1,14 @@
+
+{
+  "name": "rewards-program-final",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "npx http-server . -p 3000 --silent",
+    "test": "jest --detectOpenHandles"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "http-server": "^14.1.1"
+  }
+}

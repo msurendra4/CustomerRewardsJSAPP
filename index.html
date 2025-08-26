@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rewards Program</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Rewards Program</h1>
+      <div class="filters">
+        
+        <label>Month</label>
+        <select id="monthDropdown"></select>
+
+        <label>Year</label>
+        <select id="yearDropdown"></select>
+      </div>
+    </header>
+
+    <main class="main">
+      <aside class="sidebar">
+        <h2>Customers</h2>
+        <div id="customerList"></div>
+        <div id="customerPagination" class="pagination"></div>
+      </aside>
+
+      <section class="content">
+        <div id="summary" class="card"></div>
+        <div id="monthlyBreakdown" class="card"></div>
+        <div id="transactionsSection" class="card">
+          <h3 id="transactionsHeading">Transactions</h3>
+          <div id="transactionsTable"></div>
+          <div id="transactionsPagination" class="pagination"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>
